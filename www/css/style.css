@@ -4,12 +4,15 @@ ion-content {
     background-size: cover;
     background-repeat: no-repeat;
 }
-ion-content h2 { color: #defbf1; }
+
+ion-content .mainContent { min-height: 100vh; margin-bottom: -180px;}
+.sticky-bottom { height: 50px; }
+
+.title { color: #defbf1; }
 .home-intro {
     font-weight: bold;
     color: #defbf1;
 }
-
 hr { border-color: #fff; margin-top: 1rem;}
 .enter {
     background-color: #7aa5d4;
