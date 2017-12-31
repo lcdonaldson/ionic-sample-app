@@ -5,7 +5,7 @@ ion-content {
     background-repeat: no-repeat;
 }
 
-ion-content .mainContent { min-height: 100vh; margin-bottom: -180px;}
+ion-content .mainContent { min-height: 100vh; margin-bottom: -90px;}
 .sticky-bottom { height: 50px; }
 
 .title { color: #defbf1; }
