@@ -1,5 +1,25 @@
 angular.module('starter.services', [])
 
+.factory('todoService', function($firebaseArray){
+  var config = {
+    apiKey: "AIzaSyAsi8-5ghRpMHrc7VC0SiFPOmDIVd5oQHw",
+    authDomain: "myionicdemo-e7d0c.firebaseapp.com",
+    databaseURL: "https://myionicdemo-e7d0c.firebaseio.com",
+    projectId: "myionicdemo-e7d0c",
+    storageBucket: "myionicdemo-e7d0c.appspot.com",
+    messagingSenderId: "92971455736"
+  };
+  
+  var todos = firebase.initializeApp(config);
+  var todoService = {
+    all: todos,
+    get: function(todoId) {
+      return todos.$getRecord(todoId);
+    }
+  }
+  return todoService;
+})
+
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
 

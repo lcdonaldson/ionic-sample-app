@@ -1,28 +1,39 @@
 /* Empty. Add your own CSS if you like */
+h1,h2,h3,h4,h5,p { color: #fff; }
 ion-content { 
     background: url(/img/back2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    color: #fff;
 }
 
-ion-content .mainContent { min-height: 100vh; margin-bottom: -90px;}
+ion-content .mainContent { 
+    min-height: 100vh; 
+    margin-bottom: -90px;
+}
+
 .sticky-bottom { height: 50px; }
-
 .title { color: #defbf1; }
-.home-intro {
-    font-weight: bold;
-    color: #defbf1;
+.home-intro { font-weight: bold; }
+
+hr { 
+    border-color: #fff; 
+    margin-top: 1rem;
 }
-hr { border-color: #fff; margin-top: 1rem;}
+
 .enter {
-    background-color: #7aa5d4;
-
-    color: #defbf1;
-    font-weight: 600;
-
+    /* structure */
     margin: 0.5rem 0 0 0; 
     padding: 0.5em 2em;
     min-width: 100%;
     border: none;
     border-radius: 4px;
+
+    /* skin */
+    background-color: #7aa5d4;
+    color: #defbf1;
+    font-weight: 600;
 }
+
+.title { margin-left: 1rem;}
+.titleSkn { font-weight: bold; }

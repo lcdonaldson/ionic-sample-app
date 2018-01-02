@@ -1,41 +1,23 @@
 <ion-view view-title="Dashboard">
-  <ion-content class="padding action-sheets-basic-page">
+  <ion-content class="padding">
     <ion-grid>
-      <ion-row class="nowrap">
-      <!--<ion-pane>
-        <ion-nav-bar class="bar-dark">
-          <ion-nav-back-button></ion-nav-back-button>
-        </ion-nav-bar>
-          <ion-nav-view></ion-nav-view>
+      <ion-row>
+        <h2 class="title titleSkn" ng-controller=" todoCtrl">
+          <div class="list">
 
-          <script type="text/ng-template" id="todos.html">
-            <ion-view view-title="todos">
-              <ion-content class="todos-content"> TEST </ion-content>
-            </ion-view>
-          </script>-->
+            <label class="item item-input">
+              <input type="text" ng-model="text" placeholder="write here"></input>
+            </label>
 
-        <div class="mainContent">
-          <h2 class="title">Welcome to Sample</h2>
-          <p class="home-intro"> Hey everyone. I thought I would try my hand at Ionic. It seems to be a big ticket item among Front End Devs Right now so
-            let's see what we can make. This will just be a simple leaderboard app for a generic sport and team. No specifics really
-            just wanting to see how the app works and displays on a phone.
-            <br>
-            <br> Im particularly interested in seeing some native functionality on my own phone, and what the differences are between
-            iphone, samsung and others before deployment. I noticed for example that while using a normal css calc() function, the
-            outcome was not what I expected. When I finally tracked it down it seems to be an issue in several frameworks.
-            <br>
-            <br> Finally, I think it will be cool to complete this app and then do a duplicate using Ionic 4 and Vue.js
-          </p>
-        </div>  
-      <!--</ion-pane>-->  
-                
-        <div class="sticky-bottom">
-          <hr>
-          <button class="enter">Enter</button>
-        </div>
+            <div class="item button button-block button-stable" 
+            ng-model="addTodoBtn"
+            ng-disabled="!text"
+            ng-click="saveTodo()">Save</div>
+
+          </div>
+        </h2>
       </ion-row>
     </ion-grid>
-    
   </ion-content>
 
 </ion-view>

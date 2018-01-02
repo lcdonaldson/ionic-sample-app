@@ -24,5 +24,8 @@
       "version": "",
       "locator": "ios"
     }
-  ]
+  ],
+  "dependencies": {
+    "angularfire": "^2.3.0"
+  }
 }
